@@ -16,6 +16,7 @@ const Home = () => {
 					</p>
 				</div>
 				<div className="home__explore--container">
+					<div className="home-blur"></div>
 					<h2>Explore</h2>
 				</div>
 			</div>

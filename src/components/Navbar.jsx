@@ -6,23 +6,23 @@ const Navbar = () => {
 				<div className="bg-blur"></div>
 				<ul className="nav-links">
 					<li className="navlink">
-						<a href="/">
-							<strong>00</strong>Home
+						<a href="/" className="active">
+							<strong>00</strong> Home
 						</a>
 					</li>
 					<li className="navlink">
 						<a href="/destination">
-							<strong>01</strong>Destination
+							<strong>01</strong> Destination
 						</a>
 					</li>
 					<li className="navlink">
 						<a href="/crew">
-							<strong>02</strong>Crew
+							<strong>02</strong> Crew
 						</a>
 					</li>
 					<li className="navlink">
 						<a href="/technology">
-							<strong>03</strong>Technology
+							<strong>03</strong> Technology
 						</a>
 					</li>
 				</ul>

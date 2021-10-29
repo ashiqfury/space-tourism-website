@@ -21,3 +21,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+*.sketch
+*.fig
+
+*.xd
+
+.DS_Store
+.prettierignore
+/space-tourism-website-main

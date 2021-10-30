@@ -5,8 +5,8 @@ import './scss/style.scss';
 function App() {
 	return (
 		<div className="App">
-			<Home />
-			{/* <Destination /> */}
+			{/* <Home /> */}
+			<Destination />
 		</div>
 	);
 }

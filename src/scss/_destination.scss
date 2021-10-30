@@ -4,4 +4,41 @@
 	background: url('../assets/destination/background-destination-desktop.jpg');
 	background-size: cover;
 	padding-top: 50px;
+
+	.planet-wrapper {
+		width: 80%;
+		margin: 150px auto 0;
+	}
+
+	h5 {
+		color: $white;
+		font-size: 28px;
+		letter-spacing: 4.72px;
+		text-transform: uppercase;
+		font-family: $font-sans;
+		font-weight: 200;
+
+		span {
+			font-weight: 700;
+			color: #666;
+			margin-right: 10px;
+		}
+	}
+}
+
+.planet-container {
+	display: flex;
+	align-items: center;
+
+	.planet-img-wrapper {
+		flex: 1;
+	}
+	.planet-text-wrapper {
+		flex: 1;
+
+		.planet-links {
+			color: $white;
+			list-style: none;
+		}
+	}
 }

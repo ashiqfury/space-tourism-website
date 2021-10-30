@@ -3,7 +3,7 @@ const data = {
 		{
 			name: 'Moon',
 			images: {
-				png: './assets/destination/image-moon.png',
+				png: '../assets/destination/image-moon.png',
 				webp: './assets/destination/image-moon.webp',
 			},
 			description:

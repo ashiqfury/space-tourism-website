@@ -7,7 +7,9 @@
 
 	.planet-wrapper {
 		width: 80%;
-		margin: 150px auto 0;
+		margin: 50px auto 0;
+		position: relative;
+		z-index: 10;
 	}
 
 	h5 {
@@ -28,17 +30,106 @@
 
 .planet-container {
 	display: flex;
-	align-items: center;
+	// align-items: center;
+	margin-top: 50px;
 
 	.planet-img-wrapper {
 		flex: 1;
+
+		img {
+			width: 70%;
+		}
 	}
 	.planet-text-wrapper {
 		flex: 1;
 
 		.planet-links {
-			color: $white;
 			list-style: none;
+			display: flex;
+			align-items: center;
+			font-size: 1rem;
+			letter-spacing: 2.7px;
+			font-family: $font-sans;
+			text-transform: uppercase;
+
+			.planet-link {
+				color: $gray;
+				margin-right: 10%;
+				cursor: pointer;
+				position: relative;
+				font-weight: 300;
+
+				&.active {
+					color: $white;
+				}
+				&.active::after {
+					opacity: 1;
+					bottom: -10px;
+				}
+
+				&::after {
+					content: '';
+					position: absolute;
+					width: 100%;
+					height: 3px;
+					background: $white;
+					bottom: -20px;
+					left: 0;
+					opacity: 0;
+					transition: 250ms ease-in;
+				}
+
+				&:hover::after {
+					opacity: 1;
+					bottom: -10px;
+				}
+			}
+		}
+
+		.planet--name {
+			font-size: 100px;
+			text-transform: uppercase;
+			margin: 25px 0;
+			color: $white;
+			font-weight: 200;
+		}
+
+		.planet--description {
+			font-size: 18px;
+			width: 70%;
+			color: $gray;
+			line-height: 2rem;
+			font-family: $font-sans2;
+			// opacity: 0.7;
+		}
+		.planet--divider {
+			width: 80%;
+			height: 0.5px;
+			background: $gray;
+			opacity: 0.4;
+			margin: 40px 0 25px;
+		}
+
+		.planet--stats-container {
+			display: flex;
+
+			.planet--stats {
+				flex: 1;
+
+				.heading {
+					color: $gray;
+					text-transform: uppercase;
+					font-family: $font-sans;
+					font-size: 14px;
+					letter-spacing: 2.36px;
+				}
+				.value {
+					color: $white;
+					text-transform: uppercase;
+					font-size: 28px;
+					margin-top: 20px;
+				}
+			}
 		}
 	}
 }

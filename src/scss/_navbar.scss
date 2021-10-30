@@ -11,6 +11,8 @@
 		height: 50px;
 		background-image: url(../assets/shared/logo.svg);
 		background-size: cover;
+		position: relative;
+		z-index: 10;
 	}
 
 	.nav-container {

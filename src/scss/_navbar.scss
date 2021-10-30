@@ -27,7 +27,7 @@
 			background-color: $gray;
 			position: absolute;
 			right: 95%;
-			opacity: 0.5;
+			opacity: 0.2;
 			z-index: 10;
 		}
 
@@ -54,21 +54,23 @@
 
 			a {
 				padding: 3.5vh 0;
-				color: $white;
+				color: $gray;
 				text-decoration: none;
 				text-transform: uppercase;
 				font-size: 1rem;
 				font-family: $font-sans;
 				font-weight: $reg;
 				letter-spacing: 2.7px;
-				box-shadow: inset 0 -4px 0 0 transparent;
+				// box-shadow: inset 0 -4px 0 0 transparent;
 				transition: 250ms ease-in;
 
 				&:hover {
 					box-shadow: inset 0 -4px 0 0 $gray;
+					color: $white;
 				}
 				&.active {
 					box-shadow: inset 0 -4px 0 0 $white;
+					color: $white;
 				}
 			}
 		}

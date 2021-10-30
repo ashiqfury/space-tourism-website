@@ -1,7 +1,9 @@
+import Navbar from '../components/Navbar';
+
 const Destination = () => {
 	return (
-		<div>
-			<h1>This is Destination Page</h1>
+		<div className="destination">
+			<Navbar />
 		</div>
 	);
 };

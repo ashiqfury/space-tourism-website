@@ -1,4 +1,4 @@
-export const data = {
+const data = {
 	destinations: [
 		{
 			name: 'Moon',
@@ -113,3 +113,5 @@ export const data = {
 		},
 	],
 };
+
+export default data;

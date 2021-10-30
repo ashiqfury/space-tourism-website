@@ -1,0 +1,103 @@
+.crew {
+	width: 100%;
+	height: 100vh;
+	background: url('../assets/crew/background-crew-desktop.jpg');
+	background-size: cover;
+	padding-top: 50px;
+
+	.crew-wrapper {
+		width: 80%;
+		margin: 50px auto 0;
+		position: relative;
+		z-index: 10;
+	}
+
+	h5 {
+		color: $white;
+		font-size: 28px;
+		letter-spacing: 4.72px;
+		text-transform: uppercase;
+		font-family: $font-sans;
+		font-weight: 200;
+	}
+	span {
+		font-weight: 700;
+		color: #666;
+		margin-right: 10px;
+	}
+}
+
+.crew-container {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 50px;
+	height: 100%;
+
+	.crew-text-wrapper {
+		flex: 1;
+		margin-top: 100px;
+
+		.crew--role {
+			text-transform: uppercase;
+			color: $gray;
+			font-size: 2rem;
+			opacity: 0.7;
+			font-weight: 300;
+		}
+		.crew--name {
+			text-transform: uppercase;
+			font-size: 56px;
+			color: $white;
+			margin: 20px 0 40px;
+			font-weight: 300;
+		}
+		.crew--description {
+			font-size: 18px;
+			width: 70%;
+			color: $gray;
+			line-height: 2rem;
+			font-family: $font-sans2;
+		}
+
+		.crew-links {
+			margin-top: 50px;
+			height: 30px;
+			display: flex;
+
+			.crew-link {
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background: $gray;
+				margin-right: 10px;
+				cursor: pointer;
+				opacity: 0.6;
+				transition: 250ms ease-in;
+
+				&:hover {
+					color: $white;
+					opacity: 0.8;
+				}
+
+				&.active {
+					color: $white;
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	.crew-img-wrapper {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+
+		img {
+			// width: 62.5%;
+			// width: 85%;
+			width: 500px;
+			object-fit: cover;
+			filter: drop-shadow(20px 0 10px rgba(0, 0, 0, 0.3));
+		}
+	}
+}

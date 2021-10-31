@@ -102,10 +102,9 @@
 		position: relative;
 
 		img {
-			// width: 80%;
+			width: 80%;
 			height: auto;
-			transition: 250ms;
-			position: absolute;
+			position: relative;
 			animation: image 500ms ease-in;
 		}
 	}

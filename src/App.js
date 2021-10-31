@@ -12,9 +12,6 @@ function App() {
 				<Route path="/" exact>
 					<Redirect to="/home" />
 				</Route>
-				{/* <Route to="/space-tourism-website">
-					<Redirect to="/home" />
-				</Route> */}
 				<Route path="/home">
 					<Home />
 				</Route>
@@ -25,6 +22,23 @@ function App() {
 					<Crew />
 				</Route>
 				<Route path="/technology">
+					<Technology />
+				</Route>
+
+				{/* Github hosting routes */}
+				<Route path="/space-tourism-website">
+					<Redirect to="/space-tourism-website/home" />
+				</Route>
+				<Route path="/space-tourism-website/home">
+					<Home />
+				</Route>
+				<Route path="/space-tourism-website/destination">
+					<Destination />
+				</Route>
+				<Route path="/space-tourism-website/crew">
+					<Crew />
+				</Route>
+				<Route path="/space-tourism-website/technology">
 					<Technology />
 				</Route>
 			</Switch>

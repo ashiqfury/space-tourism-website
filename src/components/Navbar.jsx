@@ -5,7 +5,8 @@ const Navbar = () => {
 	const location = useLocation();
 
 	useEffect(() => {
-		const path = location.pathname.split('/')[1];
+		let path = location.pathname.split('/');
+		path = path[path.length - 1];
 		const element = document.getElementById(`${path}`);
 		element.classList.add('active');
 	}, [location.pathname]);

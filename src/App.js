@@ -9,36 +9,36 @@ function App() {
 	return (
 		<Router>
 			<Switch>
-				<Route path="/" exact>
-					<Redirect to="/home" />
-				</Route>
-				<Route path="/home">
+				<Route path="/home" exact>
 					<Home />
 				</Route>
-				<Route path="/destination">
+				<Route path="/destination" exact>
 					<Destination />
 				</Route>
-				<Route path="/crew">
+				<Route path="/crew" exact>
 					<Crew />
 				</Route>
-				<Route path="/technology">
+				<Route path="/technology" exact>
 					<Technology />
 				</Route>
 
 				{/* Github hosting routes */}
-				<Route path="/space-tourism-website">
+				<Route path="/" exact>
 					<Redirect to="/space-tourism-website/home" />
 				</Route>
-				<Route path="/space-tourism-website/home">
+				<Route path="/space-tourism-website" exact>
+					<Redirect to="/space-tourism-website/home" />
+				</Route>
+				<Route path="/space-tourism-website/home" exact>
 					<Home />
 				</Route>
-				<Route path="/space-tourism-website/destination">
+				<Route path="/space-tourism-website/destination" exact>
 					<Destination />
 				</Route>
-				<Route path="/space-tourism-website/crew">
+				<Route path="/space-tourism-website/crew" exact>
 					<Crew />
 				</Route>
-				<Route path="/space-tourism-website/technology">
+				<Route path="/space-tourism-website/technology" exact>
 					<Technology />
 				</Route>
 			</Switch>

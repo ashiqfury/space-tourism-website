@@ -18,22 +18,22 @@ const Navbar = () => {
 				<div className="bg-blur"></div>
 				<ul className="nav-links">
 					<li className="navlink">
-						<a href="/" id="home">
+						<a href="/space-tourism-website" id="home">
 							<strong>00</strong> Home
 						</a>
 					</li>
 					<li className="navlink">
-						<a href="/destination" id="destination">
+						<a href="/space-tourism-website/destination" id="destination">
 							<strong>01</strong> Destination
 						</a>
 					</li>
 					<li className="navlink">
-						<a href="/crew" id="crew">
+						<a href="/space-tourism-website/crew" id="crew">
 							<strong>02</strong> Crew
 						</a>
 					</li>
 					<li className="navlink">
-						<a href="/technology" id="technology">
+						<a href="/space-tourism-website/technology" id="technology">
 							<strong>03</strong> Technology
 						</a>
 					</li>

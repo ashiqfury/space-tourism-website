@@ -13,3 +13,7 @@ body {
 	font-family: $font-serif;
 	overflow: hidden;
 }
+
+::selection {
+	background: $black;
+}

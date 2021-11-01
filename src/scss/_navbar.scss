@@ -21,6 +21,17 @@
 		display: flex;
 		align-items: center;
 		position: relative;
+		animation: navbar 500ms ease-in;
+		@keyframes navbar {
+			from {
+				right: -100%;
+				opacity: 0;
+			}
+			to {
+				right: 0;
+				opacity: 1;
+			}
+		}
 
 		&::before {
 			content: '';
@@ -31,6 +42,20 @@
 			right: 95%;
 			opacity: 0.2;
 			z-index: 10;
+			animation: navbar-before 1000ms ease-in-out;
+			@keyframes navbar-before {
+				0% {
+					width: 0;
+					opacity: 0;
+				}
+				50% {
+					opacity: 1;
+				}
+				100% {
+					width: 60%;
+					opacity: 0.2;
+				}
+			}
 		}
 
 		.bg-blur {
@@ -42,6 +67,15 @@
 			left: 0;
 			background: rgba(255, 255, 255, 0.05);
 			backdrop-filter: blur(15px);
+			animation: bg-blur 1000ms ease-in;
+			@keyframes bg-blur {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
 		}
 
 		.nav-links {

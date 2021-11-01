@@ -1,7 +1,9 @@
 const Navbar = ({ setPage }) => {
 	return (
 		<div className="navbar">
-			<div className="logo"></div>
+			<a href="https://github.com/ashiqfury" target="_blank" rel="noreferrer">
+				<div className="logo"></div>
+			</a>
 			<nav className="nav-container">
 				<div className="bg-blur"></div>
 				<ul className="nav-links">

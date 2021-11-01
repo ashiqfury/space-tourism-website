@@ -40,6 +40,9 @@
 				text-transform: lowercase;
 			}
 		}
+		a {
+			text-decoration: none;
+		}
 		.home__explore--container {
 			background: $white;
 			border-radius: 50%;

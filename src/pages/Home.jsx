@@ -15,9 +15,11 @@ const Home = ({ setPage }) => {
 						a truly out of this world experience!
 					</p>
 				</div>
-				<div className="home__explore--container">
-					<h2>Explore</h2>
-				</div>
+				<a href="https://github.com/ashiqfury" target="_blank" rel="noreferrer">
+					<div className="home__explore--container">
+						<h2>Explore</h2>
+					</div>
+				</a>
 			</div>
 		</div>
 	);

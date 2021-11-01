@@ -6,13 +6,13 @@ import './scss/style.scss';
 import { useState } from 'react';
 
 const App = () => {
-	const [page, setPage] = useState(1);
+	const [page, setPage] = useState(0);
 	return (
 		<div>
-			{page === 1 && <Home setPage={setPage} />}
-			{page === 2 && <Destination setPage={setPage} />}
-			{page === 3 && <Crew setPage={setPage} />}
-			{page === 4 && <Technology setPage={setPage} />}
+			{page === 0 && <Home setPage={setPage} page={page} />}
+			{page === 1 && <Destination setPage={setPage} page={page} />}
+			{page === 2 && <Crew setPage={setPage} page={page} />}
+			{page === 3 && <Technology setPage={setPage} page={page} />}
 		</div>
 	);
 };

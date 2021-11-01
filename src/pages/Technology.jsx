@@ -7,7 +7,7 @@ import image3 from '../assets/technology/image-space-capsule-portrait.jpg';
 
 const images = [image1, image2, image3];
 
-const Technology = () => {
+const Technology = ({ setPage }) => {
 	const [index, setIndex] = useState(0);
 
 	useEffect(() => {
@@ -20,7 +20,7 @@ const Technology = () => {
 
 	return (
 		<div className="technology">
-			<Navbar />
+			<Navbar setPage={setPage} />
 			<div className="tech-wrapper">
 				<h5 className="tech-header-text">
 					<span>01</span> Pick your destination

@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 
 const images = [moon, mars, europa, titan];
 
-const Destination = () => {
+const Destination = ({ setPage }) => {
 	const [index, setIndex] = useState(0);
 
 	useEffect(() => {
@@ -21,7 +21,7 @@ const Destination = () => {
 
 	return (
 		<div className="destination">
-			<Navbar />
+			<Navbar setPage={setPage} />
 			<div className="planet-wrapper">
 				<h5 className="planet-header-text">
 					<span>01</span> Pick your destination

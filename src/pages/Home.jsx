@@ -1,9 +1,9 @@
 import Navbar from '../components/Navbar';
 
-const Home = () => {
+const Home = ({ setPage }) => {
 	return (
 		<div className="home">
-			<Navbar />
+			<Navbar setPage={setPage} />
 
 			<div className="home__main">
 				<div className="home__text--container">

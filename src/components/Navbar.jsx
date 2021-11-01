@@ -1,16 +1,4 @@
-import { useEffect } from 'react';
-import { useLocation } from 'react-router';
-
-const Navbar = () => {
-	const location = useLocation();
-
-	useEffect(() => {
-		let path = location.pathname.split('/');
-		path = path[path.length - 1];
-		const element = document.getElementById(`${path}`);
-		element.classList.add('active');
-	}, [location.pathname]);
-
+const Navbar = ({ setPage }) => {
 	return (
 		<div className="navbar">
 			<div className="logo"></div>
@@ -18,24 +6,24 @@ const Navbar = () => {
 				<div className="bg-blur"></div>
 				<ul className="nav-links">
 					<li className="navlink">
-						<a href="/space-tourism-website" id="home">
+						<span className="nav-btn" onClick={() => setPage(1)}>
 							<strong>00</strong> Home
-						</a>
+						</span>
 					</li>
 					<li className="navlink">
-						<a href="/space-tourism-website/destination" id="destination">
+						<span className="nav-btn" onClick={() => setPage(2)}>
 							<strong>01</strong> Destination
-						</a>
+						</span>
 					</li>
 					<li className="navlink">
-						<a href="/space-tourism-website/crew" id="crew">
+						<span className="nav-btn" onClick={() => setPage(3)}>
 							<strong>02</strong> Crew
-						</a>
+						</span>
 					</li>
 					<li className="navlink">
-						<a href="/space-tourism-website/technology" id="technology">
+						<span className="nav-btn" onClick={() => setPage(4)}>
 							<strong>03</strong> Technology
-						</a>
+						</span>
 					</li>
 				</ul>
 			</nav>

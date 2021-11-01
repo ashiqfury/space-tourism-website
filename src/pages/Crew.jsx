@@ -8,7 +8,7 @@ import person4 from '../assets/crew/image-anousheh-ansari.png';
 
 const persons = [person1, person2, person3, person4];
 
-const Crew = () => {
+const Crew = ({ setPage }) => {
 	const [index, setIndex] = useState(0);
 
 	useEffect(() => {
@@ -21,7 +21,7 @@ const Crew = () => {
 
 	return (
 		<div className="crew">
-			<Navbar />
+			<Navbar setPage={setPage} />
 			<div className="crew-wrapper">
 				<h5 className="crew-header-text">
 					<span>02</span> Meet your crew

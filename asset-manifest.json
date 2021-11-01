@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/space-tourism-website/static/css/main.09f7139d.chunk.css",
-    "main.js": "/space-tourism-website/static/js/main.2e4bf6cf.chunk.js",
-    "main.js.map": "/space-tourism-website/static/js/main.2e4bf6cf.chunk.js.map",
+    "main.css": "/space-tourism-website/static/css/main.45cb6ae2.chunk.css",
+    "main.js": "/space-tourism-website/static/js/main.60fbe245.chunk.js",
+    "main.js.map": "/space-tourism-website/static/js/main.60fbe245.chunk.js.map",
     "runtime-main.js": "/space-tourism-website/static/js/runtime-main.8d0bf5d5.js",
     "runtime-main.js.map": "/space-tourism-website/static/js/runtime-main.8d0bf5d5.js.map",
-    "static/js/2.621e15b3.chunk.js": "/space-tourism-website/static/js/2.621e15b3.chunk.js",
-    "static/js/2.621e15b3.chunk.js.map": "/space-tourism-website/static/js/2.621e15b3.chunk.js.map",
+    "static/js/2.53a3b127.chunk.js": "/space-tourism-website/static/js/2.53a3b127.chunk.js",
+    "static/js/2.53a3b127.chunk.js.map": "/space-tourism-website/static/js/2.53a3b127.chunk.js.map",
     "index.html": "/space-tourism-website/index.html",
-    "static/css/main.09f7139d.chunk.css.map": "/space-tourism-website/static/css/main.09f7139d.chunk.css.map",
-    "static/js/2.621e15b3.chunk.js.LICENSE.txt": "/space-tourism-website/static/js/2.621e15b3.chunk.js.LICENSE.txt",
+    "static/css/main.45cb6ae2.chunk.css.map": "/space-tourism-website/static/css/main.45cb6ae2.chunk.css.map",
+    "static/js/2.53a3b127.chunk.js.LICENSE.txt": "/space-tourism-website/static/js/2.53a3b127.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/space-tourism-website/static/media/logo.565f7f2c.svg",
     "static/media/image-anousheh-ansari.2d647128.png": "/space-tourism-website/static/media/image-anousheh-ansari.2d647128.png",
     "static/media/image-douglas-hurley.7540fbb6.png": "/space-tourism-website/static/media/image-douglas-hurley.7540fbb6.png",
@@ -25,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8d0bf5d5.js",
-    "static/js/2.621e15b3.chunk.js",
-    "static/css/main.09f7139d.chunk.css",
-    "static/js/main.2e4bf6cf.chunk.js"
+    "static/js/2.53a3b127.chunk.js",
+    "static/css/main.45cb6ae2.chunk.css",
+    "static/js/main.60fbe245.chunk.js"
   ]
 }

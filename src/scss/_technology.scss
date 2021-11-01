@@ -71,6 +71,7 @@
 
 		.tech-texts {
 			width: 100%;
+			transition: 250ms;
 
 			h5 {
 				font-size: 1rem;
@@ -91,6 +92,7 @@
 				color: $gray;
 				line-height: 2rem;
 				font-family: $font-sans2;
+				font-weight: 300;
 			}
 		}
 	}
@@ -105,18 +107,19 @@
 			width: 80%;
 			height: auto;
 			position: relative;
-			animation: image 500ms ease-in;
+			right: 0;
+			// animation: image 500ms ease-in;
 		}
 	}
 }
 
-@keyframes image {
-	from {
-		right: -100%;
-		width: 0;
-	}
-	to {
-		right: 0;
-		width: 80%;
-	}
-}
+// @keyframes image {
+// 	from {
+// 		right: -100%;
+// 		width: 0;
+// 	}
+// 	to {
+// 		right: 0;
+// 		width: 80%;
+// 	}
+// }

@@ -20,7 +20,7 @@ const Technology = ({ setPage }) => {
 
 	return (
 		<div className="technology">
-			<Navbar setPage={setPage} />
+			{/* <Navbar setPage={setPage} /> */}
 			<div className="tech-wrapper">
 				<h5 className="tech-header-text">
 					<span>01</span> Pick your destination

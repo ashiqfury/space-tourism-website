@@ -21,7 +21,7 @@ const Crew = ({ setPage }) => {
 
 	return (
 		<div className="crew">
-			<Navbar setPage={setPage} />
+			{/* <Navbar setPage={setPage} /> */}
 			<div className="crew-wrapper">
 				<h5 className="crew-header-text">
 					<span>02</span> Meet your crew

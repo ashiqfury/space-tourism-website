@@ -21,7 +21,7 @@ const Destination = ({ setPage }) => {
 
 	return (
 		<div className="destination">
-			<Navbar setPage={setPage} />
+			{/* <Navbar setPage={setPage} /> */}
 			<div className="planet-wrapper">
 				<h5 className="planet-header-text">
 					<span>01</span> Pick your destination

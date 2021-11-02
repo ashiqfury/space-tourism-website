@@ -4,11 +4,13 @@ import Crew from './pages/Crew';
 import Home from './pages/Home';
 import './scss/style.scss';
 import { useState } from 'react';
+import Navbar from './components/Navbar';
 
 const App = () => {
 	const [page, setPage] = useState(0);
 	return (
 		<div>
+			<Navbar setPage={setPage} page={page} />
 			{page === 0 && <Home setPage={setPage} page={page} />}
 			{page === 1 && <Destination setPage={setPage} page={page} />}
 			{page === 2 && <Crew setPage={setPage} page={page} />}

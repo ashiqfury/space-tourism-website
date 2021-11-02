@@ -1,22 +1,18 @@
-// import { useEffect } from 'react';
-
 import { useEffect, useState } from 'react';
 
 const Navbar = ({ setPage, page }) => {
 	const [index, setIndex] = useState(0);
-
-	// useEffect(() => {
 	const clickHandler = (value) => {
 		setPage(value);
 		setIndex(value);
+	};
+	useEffect(() => {
 		const list = document.querySelectorAll('span.nav-btn');
 		for (let i = 0; i < list.length; i++) {
 			list[i].classList.remove('active');
+			i === index && list[i].classList.add('active');
 		}
-		list[value].classList.add('active');
-	};
-	// clickHandler();
-	// }, [index]);
+	}, [index]);
 
 	return (
 		<div className="navbar">

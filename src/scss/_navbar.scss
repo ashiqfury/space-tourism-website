@@ -15,6 +15,17 @@
 		background-size: cover;
 		position: relative;
 		z-index: 10;
+		animation: logo 500ms ease-in-out;
+		@keyframes logo {
+			from {
+				transform: scale(0);
+				opacity: 0;
+			}
+			to {
+				transform: scale(1);
+				opacity: 1;
+			}
+		}
 	}
 
 	.nav-container {

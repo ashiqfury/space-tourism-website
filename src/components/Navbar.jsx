@@ -1,18 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 const Navbar = ({ setPage, page }) => {
-	const [index, setIndex] = useState(0);
-	const clickHandler = (value) => {
-		setPage(value);
-		setIndex(value);
-	};
 	useEffect(() => {
 		const list = document.querySelectorAll('span.nav-btn');
 		for (let i = 0; i < list.length; i++) {
 			list[i].classList.remove('active');
-			i === index && list[i].classList.add('active');
 		}
-	}, [index]);
+		list[page].classList.add('active');
+	}, [page]);
 
 	return (
 		<div className="navbar">
@@ -23,24 +18,22 @@ const Navbar = ({ setPage, page }) => {
 				<div className="bg-blur"></div>
 				<ul className="nav-links">
 					<li className="navlink">
-						{/* <span className="nav-btn active" onClick={() => setPage(0)}> */}
-						<span className="nav-btn active" onClick={() => clickHandler(0)}>
+						<span className="nav-btn active" onClick={() => setPage(0)}>
 							<strong>00</strong> Home
 						</span>
 					</li>
 					<li className="navlink">
-						{/* <span className="nav-btn" onClick={() => setPage(1)}> */}
-						<span className="nav-btn" onClick={() => clickHandler(1)}>
+						<span className="nav-btn" onClick={() => setPage(1)}>
 							<strong>01</strong> Destination
 						</span>
 					</li>
 					<li className="navlink">
-						<span className="nav-btn" onClick={() => clickHandler(2)}>
+						<span className="nav-btn" onClick={() => setPage(2)}>
 							<strong>02</strong> Crew
 						</span>
 					</li>
 					<li className="navlink">
-						<span className="nav-btn" onClick={() => clickHandler(3)}>
+						<span className="nav-btn" onClick={() => setPage(3)}>
 							<strong>03</strong> Technology
 						</span>
 					</li>

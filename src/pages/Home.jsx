@@ -1,10 +1,6 @@
-import Navbar from '../components/Navbar';
-
-const Home = ({ setPage, page }) => {
+const Home = () => {
 	return (
 		<div className="home">
-			{/* <Navbar setPage={setPage} page={page} /> */}
-
 			<div className="home__main">
 				<div className="home__text--container">
 					<h3 className="home--subheading">So, You want to travel to</h3>

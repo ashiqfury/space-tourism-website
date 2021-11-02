@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import Navbar from '../components/Navbar';
 import data from '../data';
 import image1 from '../assets/technology/image-launch-vehicle-portrait.jpg';
 import image2 from '../assets/technology/image-spaceport-portrait.jpg';
@@ -20,7 +19,6 @@ const Technology = ({ setPage }) => {
 
 	return (
 		<div className="technology">
-			{/* <Navbar setPage={setPage} /> */}
 			<div className="tech-wrapper">
 				<h5 className="tech-header-text">
 					<span>01</span> Pick your destination

@@ -7,10 +7,14 @@
 	justify-content: space-between;
 	position: absolute;
 	top: 50px;
+	@media only screen and (max-width: 768px) {
+		top: 0;
+	}
 
 	.logo {
-		width: 50px;
-		height: 50px;
+		$size: 50px;
+		width: $size;
+		height: $size;
 		background-image: url(../assets/shared/logo.svg);
 		background-size: cover;
 		position: relative;
@@ -35,6 +39,9 @@
 		align-items: center;
 		position: relative;
 		animation: navbar 500ms ease-in;
+		@media only screen and (max-width: 768px) {
+			width: 80%;
+		}
 		@keyframes navbar {
 			from {
 				right: -100%;
@@ -47,8 +54,9 @@
 		}
 
 		&::before {
+			$width: 60%;
 			content: '';
-			width: 60%;
+			width: $width;
 			height: 1px;
 			background-color: $gray;
 			position: absolute;
@@ -56,6 +64,9 @@
 			opacity: 0.2;
 			z-index: 10;
 			animation: navbar-before 1000ms ease-in-out;
+			@media only screen and (max-width: 768px) {
+				display: none;
+			}
 			@keyframes navbar-before {
 				0% {
 					width: 0;
@@ -65,7 +76,7 @@
 					opacity: 1;
 				}
 				100% {
-					width: 60%;
+					width: $width;
 					opacity: 0.2;
 				}
 			}
@@ -114,6 +125,11 @@
 				// box-shadow: inset 0 -4px 0 0 transparent;
 				transition: 250ms ease-in;
 				cursor: pointer;
+				@media only screen and (max-width: 768px) {
+					font-size: 14px;
+					letter-spacing: 2.36;
+					font-weight: 300;
+				}
 
 				&:hover {
 					box-shadow: inset 0 -4px 0 0 $gray;

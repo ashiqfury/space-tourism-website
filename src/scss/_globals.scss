@@ -12,6 +12,9 @@ body {
 	width: 100%;
 	font-family: $font-serif;
 	overflow: hidden;
+	@media only screen and (max-width: 768px) {
+		overflow: auto;
+	}
 }
 
 ::selection {

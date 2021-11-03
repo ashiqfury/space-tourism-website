@@ -3,10 +3,11 @@ import data from '../data';
 import image1 from '../assets/technology/image-launch-vehicle-portrait.jpg';
 import image2 from '../assets/technology/image-spaceport-portrait.jpg';
 import image3 from '../assets/technology/image-space-capsule-portrait.jpg';
+// landscape images also available.
 
 const images = [image1, image2, image3];
 
-const Technology = ({ setPage }) => {
+const Technology = () => {
 	const [index, setIndex] = useState(0);
 
 	useEffect(() => {

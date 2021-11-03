@@ -5,12 +5,22 @@
 	background-size: cover;
 	padding-top: 50px;
 	padding-top: 20vh;
+	@media only screen and (max-width: 768px) {
+		height: auto;
+		background: url('../assets/technology/background-technology-tablet.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
 	.tech-wrapper {
 		width: 90%;
 		margin: 50px 0 0 10%;
 		position: relative;
 		z-index: 10;
+		@media only screen and (max-width: 768px) {
+			width: 100%;
+			margin: 1vw auto 0;
+		}
 	}
 
 	h5 {
@@ -20,11 +30,19 @@
 		text-transform: uppercase;
 		font-family: $font-sans;
 		font-weight: 200;
+		@media only screen and (max-width: 768px) {
+			padding-left: 5vw;
+			font-size: 4vw;
+			letter-spacing: 0.7vw;
+		}
 
 		span {
 			font-weight: 700;
 			color: #666;
 			margin-right: 10px;
+			@media only screen and (max-width: 768px) {
+				margin-right: 2vw;
+			}
 		}
 	}
 }
@@ -32,12 +50,21 @@
 .tech-container {
 	display: flex;
 	margin-top: 50px;
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+		margin-top: 5vw;
+		text-align: center;
+	}
 
 	.tech-text-wrapper {
 		flex: 5.5;
 		display: flex;
 		height: 70%;
 		padding-top: 5%;
+		@media only screen and (max-width: 768px) {
+			order: 2;
+			flex-direction: column;
+		}
 
 		.tech-links {
 			width: 50px;
@@ -46,10 +73,17 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: space-between;
+			@media only screen and (max-width: 768px) {
+				flex-direction: row;
+				width: 30%;
+				margin: 5vw auto;
+				justify-content: space-around;
+			}
 
 			.tech-link {
-				width: 70px;
-				height: 70px;
+				$size: 70px;
+				width: $size;
+				height: $size;
 				border-radius: 50%;
 				border: 1px solid $gray;
 				font-size: 2rem;
@@ -59,6 +93,12 @@
 				justify-content: center;
 				cursor: pointer;
 				transition: 250ms ease-in;
+				@media only screen and (max-width: 768px) {
+					$size: 7vw;
+					width: $size;
+					height: $size;
+					font-size: 3vw;
+				}
 
 				&:hover {
 					border: 2px solid $white;
@@ -79,6 +119,10 @@
 				letter-spacing: 2.7px;
 				color: $gray;
 				text-transform: uppercase;
+				@media only screen and (max-width: 768px) {
+					font-size: 2vw;
+					letter-spacing: 0.3vw;
+				}
 			}
 			h2 {
 				font-size: 56px;
@@ -86,6 +130,10 @@
 				text-transform: uppercase;
 				font-weight: 300;
 				margin: 20px 0 30px;
+				@media only screen and (max-width: 768px) {
+					font-size: 6vw;
+					margin: 2vw 0 3vw;
+				}
 			}
 			p {
 				font-size: 18px;
@@ -94,6 +142,12 @@
 				line-height: 2rem;
 				font-family: $font-sans2;
 				font-weight: 300;
+				@media only screen and (max-width: 768px) {
+					text-align: center;
+					margin: 0 auto 10vw;
+					font-size: 2.5vw;
+					line-height: 4vw;
+				}
 			}
 		}
 	}
@@ -103,6 +157,12 @@
 		justify-content: flex-end;
 		align-items: center;
 		position: relative;
+		@media only screen and (max-width: 768px) {
+			width: 100%;
+			height: auto;
+			order: 1;
+			position: static;
+		}
 
 		img {
 			width: 80%;
@@ -110,6 +170,12 @@
 			position: relative;
 			right: 0;
 			top: -10%;
+			@media only screen and (max-width: 768px) {
+				position: static;
+				object-fit: cover;
+				width: 100%;
+				aspect-ratio: 16/8;
+			}
 		}
 	}
 }

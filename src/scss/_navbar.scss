@@ -10,7 +10,9 @@
 	@media only screen and (max-width: 768px) {
 		top: 0;
 	}
-
+	@media only screen and (max-width: 375px) {
+		padding: 0 5%;
+	}
 	.logo {
 		$size: 50px;
 		width: $size;
@@ -20,6 +22,11 @@
 		position: relative;
 		z-index: 10;
 		animation: logo 500ms ease-in-out;
+		@media only screen and (max-width: 375px) {
+			$size: 40px;
+			width: $size;
+			height: $size;
+		}
 		@keyframes logo {
 			from {
 				transform: scale(0);
@@ -39,8 +46,20 @@
 		align-items: center;
 		position: relative;
 		animation: navbar 500ms ease-in;
-		@media only screen and (max-width: 768px) {
+		@media only screen and (max-width: 768px) and (min-width: 375px) {
 			width: 80%;
+		}
+		@media only screen and (max-width: 375px) {
+			position: absolute;
+			top: 0;
+			right: -100%;
+			bottom: 0;
+			width: 75%;
+			height: 100vh;
+			z-index: 15;
+			align-items: flex-start;
+			padding-left: 10%;
+			transition: 500ms ease-in-out;
 		}
 		@keyframes navbar {
 			from {
@@ -92,6 +111,15 @@
 			background: rgba(255, 255, 255, 0.05);
 			backdrop-filter: blur(15px);
 			animation: bg-blur 1000ms ease-in;
+			@media only screen and (max-width: 375px) {
+				width: 100%;
+				height: 100%;
+				z-index: 16;
+				// background: rgba(255, 255, 255, 0.45);
+				background: rgba(0, 0, 0, 0.85);
+				backdrop-filter: blur(30px);
+				// Need to fix this blur effect.
+			}
 			@keyframes bg-blur {
 				from {
 					opacity: 0;
@@ -111,6 +139,13 @@
 			justify-content: space-evenly;
 			position: relative;
 			z-index: 10;
+			@media only screen and (max-width: 375px) {
+				height: 30%;
+				align-items: flex-start;
+				flex-direction: column;
+				z-index: 20;
+				margin-top: 30%;
+			}
 
 			a,
 			span {
@@ -130,12 +165,24 @@
 					letter-spacing: 0.3vw;
 					font-weight: 300;
 				}
+				@media only screen and (max-width: 375px) {
+					position: relative;
+					z-index: 30;
+					font-size: 1.2rem;
+					font-weight: 400;
+					margin-top: 10px;
+				}
 
 				&:hover {
 					box-shadow: inset 0 -4px 0 0 $gray;
 					color: $white;
 					@media only screen and (max-width: 768px) {
 						box-shadow: inset 0 -0.5vw 0 0 $gray;
+					}
+					@media only screen and (max-width: 375px) {
+						box-shadow: none;
+						font-weight: 500;
+						margin-left: 10px;
 					}
 				}
 				&.active {
@@ -144,8 +191,67 @@
 					@media only screen and (max-width: 768px) {
 						box-shadow: inset 0 -0.5vw 0 0 $gray;
 					}
+					@media only screen and (max-width: 375px) {
+						box-shadow: none;
+					}
 				}
 			}
 		}
 	}
+}
+
+.mobile {
+	display: none;
+	@media only screen and (max-width: 375px) {
+		display: block;
+	}
+}
+
+.hamburger {
+	width: 30px;
+	height: 25px;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	z-index: 30;
+	transition: 250ms ease-in-out;
+
+	&.active .stick1 {
+		top: 50%;
+		transform: translateY(-50%) rotate(405deg);
+	}
+	&.active .stick2 {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	&.active .stick3 {
+		bottom: 50%;
+		transform: translateY(50%) rotate(-405deg);
+	}
+
+	.stick {
+		width: 100%;
+		height: 3px;
+		position: absolute;
+		background: $white;
+		border-radius: 5px;
+	}
+	.stick1 {
+		top: 0;
+		transition: 500ms ease-in-out 250ms;
+	}
+	.stick2 {
+		top: 50%;
+		transform: translateY(-50%);
+		transition: 250ms ease-in-out;
+	}
+	.stick3 {
+		bottom: 0;
+		transition: 500ms ease-in-out 250ms;
+	}
+}
+
+.hamburger.active + .nav-container {
+	right: 0;
 }

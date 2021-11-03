@@ -9,16 +9,25 @@ const Navbar = ({ setPage, page }) => {
 		list[page].classList.add('active');
 	}, [page]);
 
+	const hamburger = () => {
+		document.querySelector('.hamburger').classList.toggle('active');
+	};
+
 	return (
 		<div className="navbar">
 			<a href="https://github.com/ashiqfury" target="_blank" rel="noreferrer">
 				<div className="logo"></div>
 			</a>
+			<div className="hamburger mobile" onClick={() => hamburger()}>
+				<div className="stick stick1"></div>
+				<div className="stick stick2"></div>
+				<div className="stick stick3"></div>
+			</div>
 			<nav className="nav-container">
 				<div className="bg-blur"></div>
 				<ul className="nav-links">
 					<li className="navlink">
-						<span className="nav-btn active" onClick={() => setPage(0)}>
+						<span className="nav-btn" onClick={() => setPage(0)}>
 							<strong>00</strong> Home
 						</span>
 					</li>

@@ -8,6 +8,8 @@
 	@media only screen and (max-width: 768px) {
 		height: auto;
 		background: url('../assets/destination/background-destination-tablet.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
 	.planet-wrapper {
@@ -17,6 +19,7 @@
 		z-index: 10;
 		@media only screen and (max-width: 768px) {
 			width: 100%;
+			margin: 1vw auto 0;
 		}
 	}
 
@@ -29,6 +32,7 @@
 		font-weight: 200;
 		@media only screen and (max-width: 768px) {
 			padding-left: 5vw;
+			font-size: 4vw;
 		}
 
 		span {
@@ -43,8 +47,11 @@
 	display: flex;
 	// align-items: center;
 	margin-top: 50px;
-	flex-direction: column;
-	text-align: center;
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+		text-align: center;
+		margin-top: 5vw;
+	}
 
 	.planet-img-wrapper {
 		flex: 1;
@@ -71,8 +78,10 @@
 			font-family: $font-sans;
 			text-transform: uppercase;
 			@media only screen and (max-width: 768px) {
-				width: fit-content;
+				width: 40%;
 				margin: 10vw auto 5vw;
+				font-size: 2vw;
+				justify-content: space-between;
 			}
 
 			.planet-link {
@@ -81,6 +90,10 @@
 				cursor: pointer;
 				position: relative;
 				font-weight: 300;
+				@media only screen and (max-width: 768px) {
+					text-align: center;
+					margin: 0;
+				}
 
 				&.active {
 					color: $white;
@@ -88,6 +101,9 @@
 				&.active::after {
 					opacity: 1;
 					bottom: -10px;
+					@media only screen and (max-width: 768px) {
+						bottom: -1vw;
+					}
 				}
 
 				&::after {
@@ -100,11 +116,17 @@
 					left: 0;
 					opacity: 0;
 					transition: 250ms ease-in;
+					@media only screen and (max-width: 768px) {
+						height: 0.5vw;
+					}
 				}
 
 				&:hover::after {
 					opacity: 1;
 					bottom: -10px;
+					@media only screen and (max-width: 768px) {
+						bottom: -1vw;
+					}
 				}
 			}
 		}
@@ -115,6 +137,10 @@
 			margin: 25px 0;
 			color: $white;
 			font-weight: 200;
+			@media only screen and (max-width: 768px) {
+				font-size: 20vw;
+				margin: 3vw 0;
+			}
 		}
 
 		.planet--description {
@@ -127,6 +153,9 @@
 			// opacity: 0.7;
 			@media only screen and (max-width: 768px) {
 				margin: 0 auto;
+				text-align: center;
+				font-size: 3vw;
+				line-height: 5vw;
 			}
 		}
 		.planet--divider {
@@ -155,12 +184,18 @@
 					font-family: $font-sans;
 					font-size: 14px;
 					letter-spacing: 2.36px;
+					@media only screen and (max-width: 768px) {
+						font-size: 2vw;
+					}
 				}
 				.value {
 					color: $white;
 					text-transform: uppercase;
 					font-size: 28px;
 					margin-top: 20px;
+					@media only screen and (max-width: 768px) {
+						font-size: 5vw;
+					}
 				}
 			}
 		}

@@ -5,12 +5,19 @@
 	background-size: cover;
 	padding-top: 50px;
 	padding-top: 20vh;
+	@media only screen and (max-width: 768px) {
+		height: auto;
+		background: url('../assets/destination/background-destination-tablet.jpg');
+	}
 
 	.planet-wrapper {
 		width: 80%;
 		margin: 50px auto 0;
 		position: relative;
 		z-index: 10;
+		@media only screen and (max-width: 768px) {
+			width: 100%;
+		}
 	}
 
 	h5 {
@@ -20,6 +27,9 @@
 		text-transform: uppercase;
 		font-family: $font-sans;
 		font-weight: 200;
+		@media only screen and (max-width: 768px) {
+			padding-left: 5vw;
+		}
 
 		span {
 			font-weight: 700;
@@ -33,16 +43,24 @@
 	display: flex;
 	// align-items: center;
 	margin-top: 50px;
+	flex-direction: column;
+	text-align: center;
 
 	.planet-img-wrapper {
 		flex: 1;
 
 		img {
 			width: 70%;
+			@media only screen and (max-width: 768px) {
+				width: 50%;
+			}
 		}
 	}
 	.planet-text-wrapper {
 		flex: 1;
+		@media only screen and (max-width: 768px) {
+			text-align: center;
+		}
 
 		.planet-links {
 			list-style: none;
@@ -52,6 +70,10 @@
 			letter-spacing: 2.7px;
 			font-family: $font-sans;
 			text-transform: uppercase;
+			@media only screen and (max-width: 768px) {
+				width: fit-content;
+				margin: 10vw auto 5vw;
+			}
 
 			.planet-link {
 				color: $gray;
@@ -103,6 +125,9 @@
 			font-family: $font-sans2;
 			font-weight: 300;
 			// opacity: 0.7;
+			@media only screen and (max-width: 768px) {
+				margin: 0 auto;
+			}
 		}
 		.planet--divider {
 			width: 80%;
@@ -110,10 +135,16 @@
 			background: $gray;
 			opacity: 0.4;
 			margin: 40px 0 25px;
+			@media only screen and (max-width: 768px) {
+				margin: 5vw auto 3vw;
+			}
 		}
 
 		.planet--stats-container {
 			display: flex;
+			@media only screen and (max-width: 768px) {
+				margin: 0 auto 5vw;
+			}
 
 			.planet--stats {
 				flex: 1;

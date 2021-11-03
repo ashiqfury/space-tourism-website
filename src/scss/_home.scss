@@ -41,8 +41,7 @@
 				position: relative;
 				animation: text 250ms ease-in-out 1000ms 1 forwards;
 				@media only screen and (max-width: 768px) {
-					font-size: 20px;
-					letter-spacing: 3.38px;
+					letter-spacing: 0.4vw;
 					font-size: 3vw;
 				}
 			}

@@ -19,6 +19,7 @@
 		z-index: 10;
 		@media only screen and (max-width: 768px) {
 			width: 100%;
+			margin: 1vw auto 0;
 		}
 	}
 
@@ -31,6 +32,7 @@
 		font-weight: 200;
 		@media only screen and (max-width: 768px) {
 			padding-left: 5vw;
+			font-size: 4vw;
 		}
 	}
 	span {
@@ -48,6 +50,7 @@
 	@media only screen and (max-width: 768px) {
 		align-items: center;
 		flex-direction: column;
+		margin-top: 5vw;
 	}
 
 	.crew-text-wrapper {
@@ -55,6 +58,7 @@
 		margin-top: 100px;
 		@media only screen and (max-width: 768px) {
 			text-align: center;
+			margin-top: 5vw;
 		}
 
 		.crew--role {
@@ -63,6 +67,9 @@
 			font-size: 2rem;
 			opacity: 0.7;
 			font-weight: 300;
+			@media only screen and (max-width: 768px) {
+				font-size: 3vw;
+			}
 		}
 		.crew--name {
 			text-transform: uppercase;
@@ -70,6 +77,10 @@
 			color: $white;
 			margin: 20px 0 40px;
 			font-weight: 300;
+			@media only screen and (max-width: 768px) {
+				font-size: 5vw;
+				margin: 3vw 0;
+			}
 		}
 		.crew--description {
 			font-size: 18px;
@@ -78,12 +89,24 @@
 			line-height: 2rem;
 			font-family: $font-sans2;
 			font-weight: 300;
+			@media only screen and (max-width: 768px) {
+				width: 60%;
+				margin: 0 auto;
+				text-align: center;
+				font-size: 2vw;
+				line-height: 4vw;
+			}
 		}
 
 		.crew-links {
 			margin-top: 50px;
 			height: 30px;
 			display: flex;
+			@media only screen and (max-width: 768px) {
+				width: 30%;
+				margin: 3vw auto;
+				justify-content: center;
+			}
 
 			.crew-link {
 				width: 10px;
@@ -119,6 +142,9 @@
 			width: 500px;
 			object-fit: cover;
 			filter: drop-shadow(20px 0 10px rgba(0, 0, 0, 0.3));
+			@media only screen and (max-width: 768px) {
+				width: 60vw;
+			}
 		}
 	}
 }

@@ -126,18 +126,24 @@
 				transition: 250ms ease-in;
 				cursor: pointer;
 				@media only screen and (max-width: 768px) {
-					font-size: 14px;
-					letter-spacing: 2.36;
+					font-size: 2vw;
+					letter-spacing: 0.3vw;
 					font-weight: 300;
 				}
 
 				&:hover {
 					box-shadow: inset 0 -4px 0 0 $gray;
 					color: $white;
+					@media only screen and (max-width: 768px) {
+						box-shadow: inset 0 -0.5vw 0 0 $gray;
+					}
 				}
 				&.active {
 					box-shadow: inset 0 -4px 0 0 $white;
 					color: $white;
+					@media only screen and (max-width: 768px) {
+						box-shadow: inset 0 -0.5vw 0 0 $gray;
+					}
 				}
 			}
 		}

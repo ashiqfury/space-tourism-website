@@ -15,6 +15,11 @@ body {
 	@media only screen and (max-width: 768px) {
 		overflow: auto;
 	}
+
+	&.active {
+		height: 100vh;
+		overflow: hidden;
+	}
 }
 
 ::selection {

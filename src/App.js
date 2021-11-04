@@ -11,7 +11,7 @@ const App = () => {
 	return (
 		<div>
 			<Navbar setPage={setPage} page={page} />
-			{page === 0 && <Home />}
+			{page === 0 && <Home setPage={setPage} />}
 			{page === 1 && <Destination />}
 			{page === 2 && <Crew />}
 			{page === 3 && <Technology />}

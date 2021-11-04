@@ -1,4 +1,4 @@
-const Home = () => {
+const Home = ({ setPage }) => {
 	return (
 		<div className="home">
 			<div className="home__main">
@@ -11,11 +11,11 @@ const Home = () => {
 						a truly out of this world experience!
 					</p>
 				</div>
-				<a href="https://github.com/ashiqfury" target="_blank" rel="noreferrer">
-					<div className="home__explore--container">
-						<h2>Explore</h2>
-					</div>
-				</a>
+				{/* <a href="https://github.com/ashiqfury" target="_blank" rel="noreferrer"> */}
+				<div className="home__explore--container" onClick={() => setPage(1)}>
+					<h2>Explore</h2>
+				</div>
+				{/* </a> */}
 			</div>
 		</div>
 	);

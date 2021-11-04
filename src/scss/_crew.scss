@@ -11,6 +11,12 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
+	@media only screen and (max-width: 375px) {
+		height: auto;
+		background: url('../assets/crew/background-crew-mobile.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
 	.crew-wrapper {
 		width: 80%;

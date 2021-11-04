@@ -7,7 +7,14 @@
 	@media only screen and (max-width: 768px) {
 		background: url('../assets/home/background-home-tablet.jpg');
 		height: auto;
-		overflow: hidden;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	@media only screen and (max-width: 375px) {
+		background: url('../assets/home/background-home-mobile.jpg');
+		height: auto;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
 	&__main {

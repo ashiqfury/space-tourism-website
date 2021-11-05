@@ -16,6 +16,7 @@
 		background: url('../assets/destination/background-destination-mobile.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
+		padding-top: 15vh;
 	}
 
 	.planet-wrapper {
@@ -40,6 +41,12 @@
 			padding-left: 5vw;
 			font-size: 4vw;
 			letter-spacing: 0.7vw;
+		}
+		@media only screen and (max-width: 375px) {
+			text-align: center;
+			font-size: 5vw;
+			font-weight: 400;
+			padding: 0;
 		}
 
 		span {
@@ -68,6 +75,9 @@
 			@media only screen and (max-width: 768px) {
 				width: 50%;
 			}
+			@media only screen and (max-width: 375px) {
+				margin-top: 5vw;
+			}
 		}
 	}
 	.planet-text-wrapper {
@@ -89,6 +99,10 @@
 				margin: 10vw auto 5vw;
 				font-size: 2vw;
 				justify-content: space-between;
+			}
+			@media only screen and (max-width: 375px) {
+				width: 60%;
+				font-size: 4vw;
 			}
 
 			.planet-link {
@@ -116,7 +130,7 @@
 				&::after {
 					content: '';
 					position: absolute;
-					width: 100%;
+					width: 95%;
 					height: 3px;
 					background: $white;
 					bottom: -20px;
@@ -148,6 +162,10 @@
 				font-size: 20vw;
 				margin: 3vw 0;
 			}
+			@media only screen and (max-width: 375px) {
+				font-size: 17vw;
+				margin: 5vw 0 3vw;
+			}
 		}
 
 		.planet--description {
@@ -164,6 +182,11 @@
 				font-size: 3vw;
 				line-height: 5vw;
 			}
+			@media only screen and (max-width: 375px) {
+				width: 85%;
+				font-size: 4vw;
+				line-height: 7vw;
+			}
 		}
 		.planet--divider {
 			width: 80%;
@@ -174,6 +197,11 @@
 			@media only screen and (max-width: 768px) {
 				margin: 5vw auto 3vw;
 			}
+			@media only screen and (max-width: 375px) {
+				width: 90%;
+				height: 0.6px;
+				margin: 7vw auto 5vw;
+			}
 		}
 
 		.planet--stats-container {
@@ -181,9 +209,15 @@
 			@media only screen and (max-width: 768px) {
 				margin: 0 auto 5vw;
 			}
+			@media only screen and (max-width: 375px) {
+				flex-direction: column;
+			}
 
 			.planet--stats {
 				flex: 1;
+				@media only screen and (max-width: 375px) {
+					margin: 5vw auto 3vw;
+				}
 
 				.heading {
 					color: $gray;
@@ -194,6 +228,9 @@
 					@media only screen and (max-width: 768px) {
 						font-size: 2vw;
 					}
+					@media only screen and (max-width: 375px) {
+						font-size: 4vw;
+					}
 				}
 				.value {
 					color: $white;
@@ -202,6 +239,10 @@
 					margin-top: 20px;
 					@media only screen and (max-width: 768px) {
 						font-size: 5vw;
+					}
+					@media only screen and (max-width: 375px) {
+						font-size: 8vw;
+						font-weight: 300;
 					}
 				}
 			}

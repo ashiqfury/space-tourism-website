@@ -50,9 +50,9 @@
 			width: 80%;
 		}
 		@media only screen and (max-width: 375px) {
-			position: absolute;
+			position: fixed;
 			top: 0;
-			right: -100%;
+			right: -75%;
 			bottom: 0;
 			width: 75%;
 			height: 100vh;

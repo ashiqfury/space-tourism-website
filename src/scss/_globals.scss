@@ -9,11 +9,16 @@ html {
 }
 
 body {
-	width: 100%;
+	width: 100vw;
+	min-height: 100vh;
 	font-family: $font-serif;
 	overflow: hidden;
 	@media only screen and (max-width: 768px) {
 		overflow: auto;
+	}
+	@media only screen and (max-width: 375px) {
+		width: 100vw;
+		overflow: hidden;
 	}
 
 	&.active {

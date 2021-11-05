@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/space-tourism-website/static/css/main.57638775.chunk.css",
+    "main.css": "/space-tourism-website/static/css/main.a6ba3e43.chunk.css",
     "main.js": "/space-tourism-website/static/js/main.a261ca85.chunk.js",
     "main.js.map": "/space-tourism-website/static/js/main.a261ca85.chunk.js.map",
     "runtime-main.js": "/space-tourism-website/static/js/runtime-main.8d0bf5d5.js",
@@ -8,7 +8,7 @@
     "static/js/2.53a3b127.chunk.js": "/space-tourism-website/static/js/2.53a3b127.chunk.js",
     "static/js/2.53a3b127.chunk.js.map": "/space-tourism-website/static/js/2.53a3b127.chunk.js.map",
     "index.html": "/space-tourism-website/index.html",
-    "static/css/main.57638775.chunk.css.map": "/space-tourism-website/static/css/main.57638775.chunk.css.map",
+    "static/css/main.a6ba3e43.chunk.css.map": "/space-tourism-website/static/css/main.a6ba3e43.chunk.css.map",
     "static/js/2.53a3b127.chunk.js.LICENSE.txt": "/space-tourism-website/static/js/2.53a3b127.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/space-tourism-website/static/media/logo.565f7f2c.svg",
     "static/media/image-anousheh-ansari.2d647128.png": "/space-tourism-website/static/media/image-anousheh-ansari.2d647128.png",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.8d0bf5d5.js",
     "static/js/2.53a3b127.chunk.js",
-    "static/css/main.57638775.chunk.css",
+    "static/css/main.a6ba3e43.chunk.css",
     "static/js/main.a261ca85.chunk.js"
   ]
 }

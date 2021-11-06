@@ -114,6 +114,7 @@
 			cursor: pointer;
 			animation: explore 1000ms ease-in-out;
 			transition: 500ms ease-in-out;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.3);
 			@media only screen and (max-width: 768px) {
 				$size: 25vw;
 				width: $size;

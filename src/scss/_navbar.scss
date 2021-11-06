@@ -60,6 +60,7 @@
 			align-items: flex-start;
 			padding-left: 10%;
 			transition: 500ms ease-in-out;
+			animation: none;
 		}
 		@keyframes navbar {
 			from {
@@ -116,10 +117,8 @@
 				height: 100vh;
 				overflow: hidden;
 				z-index: 16;
-				// background: rgba(255, 255, 255, 0.45);
-				background: rgba(0, 0, 0, 0.85);
-				backdrop-filter: blur(30px);
-				// Need to fix this blur effect.
+				backdrop-filter: blur(20px);
+				box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3), -10px 0 40px rgba(0, 0, 0, 0.3);
 			}
 			@keyframes bg-blur {
 				from {
@@ -167,11 +166,13 @@
 					font-weight: 300;
 				}
 				@media only screen and (max-width: 375px) {
+					padding: 0;
 					position: relative;
 					z-index: 30;
 					font-size: 1.2rem;
 					font-weight: 400;
 					margin-top: 10px;
+					text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 				}
 
 				&:hover {
@@ -236,7 +237,7 @@
 		height: 3px;
 		position: absolute;
 		background: $white;
-		border-radius: 5px;
+		border-radius: 4px;
 	}
 	.stick1 {
 		top: 0;

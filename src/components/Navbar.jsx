@@ -12,6 +12,7 @@ const Navbar = ({ setPage, page }) => {
 	const pageHandler = (value) => {
 		setPage(value);
 		document.querySelector('.hamburger').classList.remove('active');
+		document.body.classList.remove('active');
 	};
 
 	const hamburger = () => {

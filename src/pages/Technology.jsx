@@ -22,7 +22,7 @@ const Technology = () => {
 		<div className="technology">
 			<div className="tech-wrapper">
 				<h5 className="tech-header-text">
-					<span>01</span> Pick your destination
+					<span>03</span> Space Launch 101
 				</h5>
 				<div className="tech-container">
 					<div className="tech-text-wrapper">

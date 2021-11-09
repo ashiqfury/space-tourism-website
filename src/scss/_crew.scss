@@ -168,18 +168,22 @@
 
 	.crew-img-wrapper {
 		flex: 1;
+		height: 100%;
 		display: flex;
 		justify-content: center;
+		position: relative;
+		bottom: 0;
+		border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
 		@media only screen and (max-width: 375px) {
 			order: 1;
 			width: 90%;
-			border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
 		}
 
 		img {
-			// width: 62.5%;
+			width: 62.5%;
 			// width: 85%;
-			width: 500px;
+			position: relative;
+			bottom: 0;
 			object-fit: cover;
 			filter: drop-shadow(20px 0 10px rgba(0, 0, 0, 0.3));
 			@media only screen and (max-width: 768px) {

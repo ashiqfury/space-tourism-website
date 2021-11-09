@@ -29,7 +29,7 @@
 		}
 	}
 
-	h5 {
+	.crew-header-text {
 		color: $white;
 		font-size: 28px;
 		letter-spacing: 4.72px;
@@ -151,6 +151,7 @@
 				margin-right: 10px;
 				cursor: pointer;
 				opacity: 0.3;
+				list-style: none;
 				transition: 250ms ease-in;
 
 				&:hover {

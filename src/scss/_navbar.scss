@@ -58,8 +58,8 @@
 			height: 100vh;
 			z-index: 15;
 			align-items: flex-start;
-			padding-left: 10%;
 			transition: 500ms ease-in-out;
+			visibility: hidden;
 			animation: none;
 		}
 		@keyframes navbar {
@@ -166,7 +166,7 @@
 					font-weight: 300;
 				}
 				@media only screen and (max-width: 375px) {
-					padding: 0;
+					padding: 5px 20px;
 					position: relative;
 					z-index: 30;
 					font-size: 1.2rem;
@@ -194,7 +194,7 @@
 						box-shadow: inset 0 -0.5vw 0 0 $gray;
 					}
 					@media only screen and (max-width: 375px) {
-						box-shadow: none;
+						box-shadow: inset 3px 0 0 $white;
 					}
 				}
 			}
@@ -212,11 +212,13 @@
 .hamburger {
 	width: 30px;
 	height: 25px;
-	position: relative;
-	cursor: pointer;
-	overflow: hidden;
+	background: transparent;
+	border: none;
+	outline: none;
 	position: relative;
 	z-index: 30;
+	overflow: hidden;
+	cursor: pointer;
 	transition: 250ms ease-in-out;
 
 	&.active .stick1 {
@@ -256,4 +258,5 @@
 
 .hamburger.active + .nav-container {
 	right: 0;
+	visibility: visible;
 }

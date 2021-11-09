@@ -26,11 +26,16 @@ const Navbar = ({ setPage, page }) => {
 			<div className="logo" aria-label="homepage" onClick={() => setPage(0)}>
 				<img src={logo} alt="Logo" />
 			</div>
-			<div className="hamburger mobile" onClick={() => hamburger()}>
+			<button
+				className="hamburger mobile"
+				onClick={() => hamburger()}
+				aria-expanded="false"
+				aria-label="navigation dropdown menu"
+			>
 				<div className="stick stick1"></div>
 				<div className="stick stick2"></div>
 				<div className="stick stick3"></div>
-			</div>
+			</button>
 			<nav className="nav-container">
 				<div className="bg-blur"></div>
 				<ul className="nav-links">

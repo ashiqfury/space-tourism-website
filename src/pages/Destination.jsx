@@ -21,12 +21,12 @@ const Destination = ({ setPage }) => {
 	return (
 		<div className="destination">
 			<div className="planet-wrapper">
-				<h5 className="planet-header-text">
+				<h1 className="planet-header-text">
 					<span>01</span> Pick your destination
-				</h5>
+				</h1>
 				<div className="planet-container">
 					<div className="planet-img-wrapper">
-						<img src={images[index]} alt="Planets" />
+						<img src={images[index]} alt={data.destinations[index].name} />
 					</div>
 					<div className="planet-text-wrapper">
 						<ul className="planet-links">
@@ -43,19 +43,19 @@ const Destination = ({ setPage }) => {
 								Titan
 							</li>
 						</ul>
-						<h1 className="planet--name">{data.destinations[index].name}</h1>
+						<h2 className="planet--name">{data.destinations[index].name}</h2>
 						<p className="planet--description">{data.destinations[index].description}</p>
 						<div className="planet--divider"></div>
-						<div className="planet--stats-container">
-							<div className="planet--stats">
+						<ul className="planet--stats-container">
+							<li className="planet--stats">
 								<p className="heading">Avg. Distance</p>
 								<h4 className="value">{data.destinations[index].distance}</h4>
-							</div>
-							<div className="planet--stats">
+							</li>
+							<li className="planet--stats">
 								<p className="heading">Est. Travel Time</p>
 								<h4 className="value">{data.destinations[index].travel}</h4>
-							</div>
-						</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>

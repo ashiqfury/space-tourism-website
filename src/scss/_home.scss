@@ -104,17 +104,20 @@
 		}
 		.home__explore--container {
 			$size: 200px;
-			background: $white;
-			border-radius: 50%;
 			width: $size;
 			height: $size;
+
 			display: flex;
 			align-items: center;
 			justify-content: center;
+
+			background: $white;
+			border-radius: 50%;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.15);
 			cursor: pointer;
-			animation: explore 1000ms ease-in-out;
+
 			transition: 500ms ease-in-out;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.3);
+			animation: explore 1000ms ease-in-out;
 			@media only screen and (max-width: 768px) {
 				$size: 25vw;
 				width: $size;
@@ -149,11 +152,13 @@
 			}
 
 			h2 {
-				color: $black;
-				text-transform: uppercase;
-				letter-spacing: 1px;
+				font-family: $font-serif;
 				font-size: $h5;
 				font-weight: 300;
+
+				color: $black;
+				letter-spacing: 1px;
+				text-transform: uppercase;
 				@media only screen and (max-width: 768px) {
 					font-size: 3vw;
 				}

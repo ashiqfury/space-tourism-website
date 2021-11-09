@@ -11,11 +11,13 @@ const Home = ({ setPage }) => {
 						a truly out of this world experience!
 					</p>
 				</div>
-				{/* <a href="https://github.com/ashiqfury" target="_blank" rel="noreferrer"> */}
-				<div className="home__explore--container" onClick={() => setPage(1)}>
+				<button
+					className="home__explore--container"
+					onClick={() => setPage(1)}
+					aria-expanded="false"
+				>
 					<h2>Explore</h2>
-				</div>
-				{/* </a> */}
+				</button>
 			</div>
 		</div>
 	);

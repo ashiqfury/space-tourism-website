@@ -29,7 +29,7 @@
 		}
 	}
 
-	h5 {
+	.tech-header-text {
 		color: $white;
 		font-size: 28px;
 		letter-spacing: 4.72px;
@@ -108,6 +108,7 @@
 				align-items: center;
 				justify-content: center;
 				cursor: pointer;
+				list-style: none;
 				transition: 250ms ease-in;
 				@media only screen and (max-width: 768px) {
 					$size: 7vw;
@@ -136,11 +137,12 @@
 			width: 100%;
 			transition: 250ms;
 
-			h5 {
+			.tech-subheading {
 				font-size: 1rem;
 				letter-spacing: 2.7px;
 				color: $gray;
 				text-transform: uppercase;
+				font-weight: 300;
 				@media only screen and (max-width: 768px) {
 					font-size: 2vw;
 					letter-spacing: 0.3vw;
@@ -150,7 +152,7 @@
 					letter-spacing: 0.5vw;
 				}
 			}
-			h2 {
+			.tech-heading {
 				font-size: 56px;
 				color: $white;
 				text-transform: uppercase;
@@ -165,7 +167,7 @@
 					margin: 3vw 0 4vw;
 				}
 			}
-			p {
+			.tech-description {
 				font-size: 18px;
 				width: 70%;
 				color: $gray;

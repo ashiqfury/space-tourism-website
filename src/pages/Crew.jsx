@@ -11,7 +11,7 @@ const Crew = () => {
 	const [index, setIndex] = useState(0);
 
 	useEffect(() => {
-		const list = document.querySelectorAll('div.crew-link');
+		const list = document.querySelectorAll('li.crew-link');
 		for (let i = 0; i < list.length; i++) {
 			list[i].classList.remove('active');
 			i === index && list[i].classList.add('active');
@@ -21,20 +21,20 @@ const Crew = () => {
 	return (
 		<div className="crew">
 			<div className="crew-wrapper">
-				<h5 className="crew-header-text">
+				<h1 className="crew-header-text">
 					<span>02</span> Meet your crew
-				</h5>
+				</h1>
 				<div className="crew-container">
 					<div className="crew-text-wrapper">
 						<h3 className="crew--role">{data.crew[index].role}</h3>
 						<h2 className="crew--name">{data.crew[index].name}</h2>
 						<p className="crew--description">{data.crew[index].bio}</p>
-						<div className="crew-links">
-							<div className="crew-link active" onClick={() => setIndex(0)}></div>
-							<div className="crew-link" onClick={() => setIndex(1)}></div>
-							<div className="crew-link" onClick={() => setIndex(2)}></div>
-							<div className="crew-link" onClick={() => setIndex(3)}></div>
-						</div>
+						<ul className="crew-links">
+							<li className="crew-link active" onClick={() => setIndex(0)}></li>
+							<li className="crew-link" onClick={() => setIndex(1)}></li>
+							<li className="crew-link" onClick={() => setIndex(2)}></li>
+							<li className="crew-link" onClick={() => setIndex(3)}></li>
+						</ul>
 					</div>
 					<div className="crew-img-wrapper">
 						<img src={persons[index]} alt="Person" />

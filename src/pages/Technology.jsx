@@ -11,7 +11,7 @@ const Technology = () => {
 	const [index, setIndex] = useState(0);
 
 	useEffect(() => {
-		const list = document.querySelectorAll('div.tech-link');
+		const list = document.querySelectorAll('li.tech-link');
 		for (let i = 0; i < list.length; i++) {
 			list[i].classList.remove('active');
 			i === index && list[i].classList.add('active');
@@ -21,25 +21,25 @@ const Technology = () => {
 	return (
 		<div className="technology">
 			<div className="tech-wrapper">
-				<h5 className="tech-header-text">
+				<h1 className="tech-header-text">
 					<span>03</span> Space Launch 101
-				</h5>
+				</h1>
 				<div className="tech-container">
 					<div className="tech-text-wrapper">
-						<div className="tech-links">
-							<div className="tech-link active" onClick={() => setIndex(0)}>
+						<ul className="tech-links">
+							<li className="tech-link active" onClick={() => setIndex(0)}>
 								1
-							</div>
-							<div className="tech-link" onClick={() => setIndex(1)}>
+							</li>
+							<li className="tech-link" onClick={() => setIndex(1)}>
 								2
-							</div>
-							<div className="tech-link" onClick={() => setIndex(2)}>
+							</li>
+							<li className="tech-link" onClick={() => setIndex(2)}>
 								3
-							</div>
-						</div>
+							</li>
+						</ul>
 						<div className="tech-texts">
-							<h5 className="tech-subheading">The technology ...</h5>
-							<h2 className="tech-heading">{data.technology[index].name}</h2>
+							<h2 className="tech-subheading">The technology ...</h2>
+							<h1 className="tech-heading">{data.technology[index].name}</h1>
 							<p className="tech-description">{data.technology[index].description}</p>
 						</div>
 					</div>

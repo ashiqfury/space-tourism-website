@@ -9,3 +9,5 @@ ReactDOM.render(
 	</StrictMode>,
 	document.getElementById('root')
 );
+
+// https://github.com/ashiqfury

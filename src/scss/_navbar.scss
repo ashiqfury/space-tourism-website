@@ -17,10 +17,10 @@
 		$size: 50px;
 		width: $size;
 		height: $size;
-		background-image: url(../assets/shared/logo.svg);
-		background-size: cover;
 		position: relative;
 		z-index: 10;
+		cursor: pointer;
+		object-fit: cover;
 		animation: logo 500ms ease-in-out;
 		@media only screen and (max-width: 375px) {
 			$size: 40px;

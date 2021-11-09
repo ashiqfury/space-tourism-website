@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import logo from '../assets/shared/logo.svg';
 
 const Navbar = ({ setPage, page }) => {
 	useEffect(() => {
@@ -21,10 +22,10 @@ const Navbar = ({ setPage, page }) => {
 	};
 
 	return (
-		<div className="navbar">
-			<a href="https://github.com/ashiqfury" target="_blank" rel="noreferrer">
-				<div className="logo"></div>
-			</a>
+		<header className="navbar" role="navigation">
+			<div className="logo" aria-label="homepage" onClick={() => setPage(0)}>
+				<img src={logo} alt="Logo" />
+			</div>
 			<div className="hamburger mobile" onClick={() => hamburger()}>
 				<div className="stick stick1"></div>
 				<div className="stick stick2"></div>
@@ -55,7 +56,7 @@ const Navbar = ({ setPage, page }) => {
 					</li>
 				</ul>
 			</nav>
-		</div>
+		</header>
 	);
 };
 

@@ -20,15 +20,15 @@ const Destination = ({ setPage }) => {
 
 	return (
 		<div className="destination">
-			<div className="planet-wrapper">
+			<main className="planet-wrapper">
 				<h1 className="planet-header-text">
 					<span>01</span> Pick your destination
 				</h1>
 				<div className="planet-container">
-					<div className="planet-img-wrapper">
+					<section className="planet-img-wrapper">
 						<img src={images[index]} alt={data.destinations[index].name} />
-					</div>
-					<div className="planet-text-wrapper">
+					</section>
+					<section className="planet-text-wrapper">
 						<ul className="planet-links">
 							<li className="planet-link active" onClick={() => setIndex(0)}>
 								Moon
@@ -56,9 +56,9 @@ const Destination = ({ setPage }) => {
 								<h4 className="value">{data.destinations[index].travel}</h4>
 							</li>
 						</ul>
-					</div>
+					</section>
 				</div>
-			</div>
+			</main>
 		</div>
 	);
 };

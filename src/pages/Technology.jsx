@@ -20,12 +20,12 @@ const Technology = () => {
 
 	return (
 		<div className="technology">
-			<div className="tech-wrapper">
+			<main className="tech-wrapper">
 				<h1 className="tech-header-text">
 					<span>03</span> Space Launch 101
 				</h1>
 				<div className="tech-container">
-					<div className="tech-text-wrapper">
+					<section className="tech-text-wrapper">
 						<ul className="tech-links">
 							<li className="tech-link active" onClick={() => setIndex(0)}>
 								1
@@ -42,12 +42,12 @@ const Technology = () => {
 							<h1 className="tech-heading">{data.technology[index].name}</h1>
 							<p className="tech-description">{data.technology[index].description}</p>
 						</div>
-					</div>
-					<div className="tech-img-wrapper">
+					</section>
+					<section className="tech-img-wrapper">
 						<img src={images[index]} alt="Images" />
-					</div>
+					</section>
 				</div>
-			</div>
+			</main>
 		</div>
 	);
 };

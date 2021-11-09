@@ -20,12 +20,12 @@ const Crew = () => {
 
 	return (
 		<div className="crew">
-			<div className="crew-wrapper">
+			<main className="crew-wrapper">
 				<h1 className="crew-header-text">
 					<span>02</span> Meet your crew
 				</h1>
 				<div className="crew-container">
-					<div className="crew-text-wrapper">
+					<section className="crew-text-wrapper">
 						<h3 className="crew--role">{data.crew[index].role}</h3>
 						<h2 className="crew--name">{data.crew[index].name}</h2>
 						<p className="crew--description">{data.crew[index].bio}</p>
@@ -35,12 +35,12 @@ const Crew = () => {
 							<li className="crew-link" onClick={() => setIndex(2)}></li>
 							<li className="crew-link" onClick={() => setIndex(3)}></li>
 						</ul>
-					</div>
-					<div className="crew-img-wrapper">
+					</section>
+					<section className="crew-img-wrapper">
 						<img src={persons[index]} alt="Person" />
-					</div>
+					</section>
 				</div>
-			</div>
+			</main>
 		</div>
 	);
 };

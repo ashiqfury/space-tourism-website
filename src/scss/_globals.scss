@@ -29,3 +29,14 @@ body {
 ::selection {
 	background: $black;
 }
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-track {
+	background: #333a;
+}
+::-webkit-scrollbar-thumb {
+	width: 5px;
+	background: $black;
+}

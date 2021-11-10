@@ -1,22 +1,17 @@
 .home {
 	width: 100%;
 	min-height: 100vh;
-	background: url('../assets/home/background-home-desktop.jpg');
-	background-size: cover;
+	@include background('../../assets/home/background-home-desktop.jpg');
+
 	padding-top: 20vh;
-	animation: fadeInUp 1s ease-in forwards;
 	@media only screen and (max-width: 768px) {
-		background: url('../assets/home/background-home-tablet.jpg');
 		height: auto;
-		background-repeat: no-repeat;
-		background-size: cover;
+		@include background('../../assets/home/background-home-tablet.jpg');
 	}
 	@media only screen and (max-width: 375px) {
-		background: url('../assets/home/background-home-mobile.jpg');
 		height: auto;
-		background-repeat: no-repeat;
-		background-size: cover;
 		padding-top: 15vh;
+		@include background('../../assets/home/background-home-mobile.jpg');
 	}
 
 	&__main {
@@ -181,18 +176,6 @@
 	to {
 		top: 0;
 		opacity: 1;
-	}
-}
-
-@keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		transform: translate3d(0, 100%, 0);
-	}
-
-	100% {
-		opacity: 1;
-		transform: none;
 	}
 }
 

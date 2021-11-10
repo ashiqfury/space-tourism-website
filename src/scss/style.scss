@@ -1,13 +1,16 @@
-@import 'variables';
+@import './utility/variables';
+@import './utility/mixins';
+@import './utility/functions';
+
 @import 'globals';
 
 // pages
-@import 'home';
-@import 'destination';
-@import 'crew';
-@import 'technology';
+@import './pages/home';
+@import './pages/destination';
+@import './pages/crew';
+@import './pages/technology';
 
 // components
-@import 'navbar';
+@import './components/navbar';
 
 // https://github.com/ashiqfury

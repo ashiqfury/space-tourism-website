@@ -4,6 +4,7 @@
 	background: url('../assets/home/background-home-desktop.jpg');
 	background-size: cover;
 	padding-top: 20vh;
+	animation: fadeInUp 1s ease-in forwards;
 	@media only screen and (max-width: 768px) {
 		background: url('../assets/home/background-home-tablet.jpg');
 		height: auto;
@@ -112,8 +113,10 @@
 			justify-content: center;
 
 			background: $white;
-			border-radius: 50%;
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.15);
+			border-radius: 50%;
+			border: none;
+			outline: none;
 			cursor: pointer;
 
 			transition: 500ms ease-in-out;
@@ -178,6 +181,18 @@
 	to {
 		top: 0;
 		opacity: 1;
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: none;
 	}
 }
 

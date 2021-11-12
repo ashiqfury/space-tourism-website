@@ -3,3 +3,17 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+@mixin flex($ai: center, $jc: space-between) {
+	display: flex;
+	align-items: $ai;
+	justify-content: $jc;
+}
+
+@mixin font($size, $weight: 300, $spacing: auto, $height: auto, $family: #{$font-serif}) {
+	font-size: rem($size);
+	font-weight: $weight;
+	letter-spacing: $spacing;
+	line-height: $height;
+	font-family: $family;
+}

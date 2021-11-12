@@ -1,5 +1,6 @@
-// Colors
+@use '../utility/functions' as func;
 
+// Colors
 $black: hsl(230, 35%, 7%);
 $gray: hsl(231, 77%, 90%);
 $white: hsl(0, 0%, 100%);
@@ -9,17 +10,22 @@ $font-sans: 'Barlow Condensed', sans-serif;
 $font-sans2: 'Barlow', sans-serif;
 $font-serif: 'Bellefair', serif;
 
-$reg: 400;
-$h1: 150px;
-$h2: 100px;
-$h3: 56px;
-$h4: 32px;
-$h5: 28px;
+// font size
+$h1: func.rem(150);
+$h2: func.rem(100);
+$h3: func.rem(56);
+$h4: func.rem(32);
+$h5: func.rem(28);
+$text: func.rem(16);
+
+$sh1: func.rem(28);
+$sh2: func.rem(14);
+// font letter spacing
 $h5-ls: 4.75;
-$sh1: 28px;
-$sh2: 14px;
 $sh2-ls: 2.35;
-$text: 16px;
 $text-ls: 2.7;
+
+// font weight
+$reg: 300;
 
 // https://github.com/ashiqfury

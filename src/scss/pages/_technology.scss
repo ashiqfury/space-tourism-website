@@ -1,20 +1,14 @@
 .technology {
 	width: 100%;
 	min-height: 100vh;
-	background: url('../../assets/technology/background-technology-desktop.jpg');
-	background-size: cover;
+	@include background('../../assets/technology/background-technology-desktop.jpg');
 	padding-top: 20vh;
 	@media only screen and (max-width: 768px) {
 		height: auto;
-		background: url('../../assets/technology/background-technology-tablet.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
+		@include background('../../assets/technology/background-technology-tablet.jpg');
 	}
 	@media only screen and (max-width: 375px) {
-		height: auto;
-		background: url('../../assets/technology/background-technology-mobile.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
+		@include background('../../assets/technology/background-technology-mobile.jpg');
 		padding: 15vh 0 10vh;
 	}
 

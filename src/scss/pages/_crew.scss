@@ -1,20 +1,14 @@
 .crew {
 	width: 100%;
 	min-height: 100vh;
-	background: url('../../assets/crew/background-crew-desktop.jpg');
-	background-size: cover;
+	@include background('../../assets/crew/background-crew-desktop.jpg');
 	padding-top: 20vh;
 	@media only screen and (max-width: 768px) {
 		height: auto;
-		background: url('../../assets/crew/background-crew-tablet.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
+		@include background('../../assets/crew/background-crew-tablet.jpg');
 	}
 	@media only screen and (max-width: 375px) {
-		height: auto;
-		background: url('../../assets/crew/background-crew-mobile.jpg'), rgba(0, 0, 0, 0.9);
-		background-repeat: no-repeat;
-		background-size: cover;
+		@include background('../../assets/crew/background-crew-mobile.jpg');
 		padding: 15vh 0 10vh;
 	}
 
@@ -108,6 +102,7 @@
 			}
 		}
 		.crew--description {
+			// @include font(18, 300, auto, 2rem, $font-sans2);
 			font-size: 18px;
 			width: 70%;
 			color: $gray;
